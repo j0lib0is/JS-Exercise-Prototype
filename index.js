@@ -19,12 +19,13 @@ Airplane.prototype.land = function () {
   this.isFlying = false;
 };
 
-
 /*
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
 */
+
+
 
 /*
   ✅ TASK 1
@@ -56,26 +57,10 @@ Person.prototype.toString = function() {
   return `${this.name}, ${this.age}`;
 }
 
-// TEST
-const jacob = new Person('Jacob', 102);
-// const camille = new Person('Camille', 73);
-// console.log(jacob.toString());
-// console.log(camille.toString());
-// 
-// jacob.eat('pizza');
-// jacob.eat('nachos');
-// jacob.eat('sushi');
-// jacob.eat('sandwich');
-// jacob.eat('cake');
-// jacob.poop();
-// console.log(jacob.stomach);
-
-
-
 
 
 /*
-  TASK 2
+  ✅ TASK 2
     - ✅ Write a Car constructor that initializes `model` and `milesPerGallon` from arguments.
     - ✅ All instances built with Car:
         + ✅ should initialize with an `tank` at 0
@@ -103,13 +88,15 @@ Car.prototype.drive = function(distance) {
 }
 
 
+
 /*
-  TASK 3
+  ✅ TASK 3
     - ✅ Write a Baby constructor subclassing Person.
     - ✅ Besides `name` and `age`, Baby takes a third argument to initialize `favoriteToy`.
     - ✅ Besides the methods on Person.prototype, babies have the ability to `.play()`:
         + ✅ Should return a string "Playing with x", x being the favorite toy.
 */
+
 function Baby(name, age, favoriteToy) {
   Person.call(this, name, age);
   this.favoriteToy = favoriteToy;
@@ -120,14 +107,16 @@ Baby.prototype.play = function() {
 };
 
 
+
 /* 
-  TASK 4
+  ✅ TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. ✅ Window Binding: Unless specified otherwise, 'this' will bind to the window/console object in the global scope.
+  2. ✅ Implicit Binding: When a function is called on an object, 'this' will bind to the object to the left of the dot.
+  3. ✅ New Binding: When a new object is created using a constructor function, 'this' will bind to the newly created object.
+  4. ✅ Explicit Binding: When using .call, .bind or .apply, 'this' can be explicitly defined within the parentheses.
 */
+
 
 
 ///////// END OF CHALLENGE /////////
